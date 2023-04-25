@@ -513,29 +513,6 @@ class _PersistentTabViewState extends State<PersistentTabView> {
                     _controller!.index = (widget.items!.length / 2).floor();
                   }
                 },
-                child: Center(
-                  child: Container(
-                    height: 21 +
-                        min(
-                            widget.navBarHeight!,
-                            max(
-                                    widget.decoration!.borderRadius!.topRight.y,
-                                    widget
-                                        .decoration!.borderRadius!.topLeft.y) +
-                                (widget.decoration?.border != null
-                                    ? widget
-                                        .decoration!.border!.dimensions.vertical
-                                    : 0.0)),
-                    margin: EdgeInsets.only(
-                        left: MediaQuery.of(context).size.width / 2 -
-                            (MediaQuery.of(context).size.width / 5.0 - 30.0) /
-                                2),
-                    width: MediaQuery.of(context).size.width / 5.0 - 30.0,
-                    decoration: const BoxDecoration(
-                      color: Colors.transparent,
-                    ),
-                  ),
-                ),
               ),
             ),
         ],
